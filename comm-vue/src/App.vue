@@ -2,7 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <el-button type="primary" @click="open">主要按钮</el-button>
-
+    
     <router-view/>
   </div>
 </template>
@@ -20,6 +20,9 @@
             })
           }
         })
+      },
+      setVUEx: function () {  
+          // this.$store.commit('newAuthor', this.msg);
       }
     }
   }

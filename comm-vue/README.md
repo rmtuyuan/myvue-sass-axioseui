@@ -42,7 +42,15 @@ npm install sass-loader --save-dev
 # router 修改 router/index.js new Router()添加  mode history H5路径  不加默认/#/结尾
   mode: 'history', 
 
+# 安装vuex 
+npm install vuex --save-dev
 
+src文件夹新建vuex文件夹 在vuex文件夹下新建 store.js
+main.js引入
+import Vuex from 'vuex'
+import store from './vuex/store'
+
+Vue.use(Vuex)
 
 # serve with hot reload at localhost:8080 
 npm run dev
